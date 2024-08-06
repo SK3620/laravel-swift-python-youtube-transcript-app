@@ -18,7 +18,7 @@ struct TranscriptView: View {
                 TextField("Enter Video ID", text: $videoId)
                     .textFieldStyle(RoundedBorderTextFieldStyle())
                     .padding()
-
+                
                 Button(action: {
                     fetchTranscript(videoId: videoId)
                 }) {
@@ -30,13 +30,13 @@ struct TranscriptView: View {
                         .cornerRadius(5.0)
                 }
                 .padding()
-
+                
                 if let errorMessage = errorMessage {
                     Text(errorMessage)
                         .foregroundColor(.red)
                         .padding()
                 }
-
+                
                 if transcript.isEmpty {
                     Spacer()
                 } else {
@@ -53,6 +53,17 @@ struct TranscriptView: View {
                         }
                         .padding()
                     }
+                }
+                
+                HStack {
+                    Spacer()
+                    NavigationLink {
+                        YouTubeList()
+                    } label: {
+                        Text("YouTube List")
+                            .font(.title3)
+                    }
+                    Spacer()
                 }
             }
             .navigationTitle("Transcript Screen")

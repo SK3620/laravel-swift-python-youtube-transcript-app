@@ -12,6 +12,8 @@
 		836B55AE2C619D2B002FF8A3 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 836B55AD2C619D2B002FF8A3 /* Assets.xcassets */; };
 		836B55B12C619D2B002FF8A3 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 836B55B02C619D2B002FF8A3 /* Preview Assets.xcassets */; };
 		836B55B82C61AE9E002FF8A3 /* TranscriptView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 836B55B72C61AE9E002FF8A3 /* TranscriptView.swift */; };
+		836B55BA2C61E42D002FF8A3 /* YouTubeList.swift in Sources */ = {isa = PBXBuildFile; fileRef = 836B55B92C61E42D002FF8A3 /* YouTubeList.swift */; };
+		836B55BD2C61E865002FF8A3 /* YouTubePlayerKit in Frameworks */ = {isa = PBXBuildFile; productRef = 836B55BC2C61E865002FF8A3 /* YouTubePlayerKit */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -21,6 +23,7 @@
 		836B55AD2C619D2B002FF8A3 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		836B55B02C619D2B002FF8A3 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		836B55B72C61AE9E002FF8A3 /* TranscriptView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TranscriptView.swift; sourceTree = "<group>"; };
+		836B55B92C61E42D002FF8A3 /* YouTubeList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = YouTubeList.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -28,6 +31,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				836B55BD2C61E865002FF8A3 /* YouTubePlayerKit in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -56,6 +60,7 @@
 				836B55A92C619D27002FF8A3 /* laravel_swift_python_youtube_transcript_appApp.swift */,
 				836B55AB2C619D27002FF8A3 /* ContentView.swift */,
 				836B55B72C61AE9E002FF8A3 /* TranscriptView.swift */,
+				836B55B92C61E42D002FF8A3 /* YouTubeList.swift */,
 				836B55AD2C619D2B002FF8A3 /* Assets.xcassets */,
 				836B55AF2C619D2B002FF8A3 /* Preview Content */,
 			);
@@ -86,6 +91,9 @@
 			dependencies = (
 			);
 			name = "laravel-swift-python-youtube-transcript-app";
+			packageProductDependencies = (
+				836B55BC2C61E865002FF8A3 /* YouTubePlayerKit */,
+			);
 			productName = "laravel-swift-python-youtube-transcript-app";
 			productReference = 836B55A62C619D27002FF8A3 /* laravel-swift-python-youtube-transcript-app.app */;
 			productType = "com.apple.product-type.application";
@@ -114,6 +122,9 @@
 				Base,
 			);
 			mainGroup = 836B559D2C619D27002FF8A3;
+			packageReferences = (
+				836B55BB2C61E865002FF8A3 /* XCRemoteSwiftPackageReference "YouTubePlayerKit" */,
+			);
 			productRefGroup = 836B55A72C619D27002FF8A3 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -141,6 +152,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				836B55AC2C619D27002FF8A3 /* ContentView.swift in Sources */,
+				836B55BA2C61E42D002FF8A3 /* YouTubeList.swift in Sources */,
 				836B55B82C61AE9E002FF8A3 /* TranscriptView.swift in Sources */,
 				836B55AA2C619D27002FF8A3 /* laravel_swift_python_youtube_transcript_appApp.swift in Sources */,
 			);
@@ -348,6 +360,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		836B55BB2C61E865002FF8A3 /* XCRemoteSwiftPackageReference "YouTubePlayerKit" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/SvenTiigi/YouTubePlayerKit.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 1.8.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		836B55BC2C61E865002FF8A3 /* YouTubePlayerKit */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 836B55BB2C61E865002FF8A3 /* XCRemoteSwiftPackageReference "YouTubePlayerKit" */;
+			productName = YouTubePlayerKit;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 836B559E2C619D27002FF8A3 /* Project object */;
 }
