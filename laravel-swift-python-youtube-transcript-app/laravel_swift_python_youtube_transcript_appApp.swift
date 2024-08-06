@@ -11,7 +11,7 @@ import SwiftUI
 struct laravel_swift_python_youtube_transcript_appApp: App {
     var body: some Scene {
         WindowGroup {
-            ContentView()
+            TranscriptView()
         }
     }
 }

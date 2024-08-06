@@ -11,6 +11,7 @@
 		836B55AC2C619D27002FF8A3 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 836B55AB2C619D27002FF8A3 /* ContentView.swift */; };
 		836B55AE2C619D2B002FF8A3 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 836B55AD2C619D2B002FF8A3 /* Assets.xcassets */; };
 		836B55B12C619D2B002FF8A3 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 836B55B02C619D2B002FF8A3 /* Preview Assets.xcassets */; };
+		836B55B82C61AE9E002FF8A3 /* TranscriptView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 836B55B72C61AE9E002FF8A3 /* TranscriptView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -19,6 +20,7 @@
 		836B55AB2C619D27002FF8A3 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		836B55AD2C619D2B002FF8A3 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		836B55B02C619D2B002FF8A3 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		836B55B72C61AE9E002FF8A3 /* TranscriptView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TranscriptView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -53,6 +55,7 @@
 			children = (
 				836B55A92C619D27002FF8A3 /* laravel_swift_python_youtube_transcript_appApp.swift */,
 				836B55AB2C619D27002FF8A3 /* ContentView.swift */,
+				836B55B72C61AE9E002FF8A3 /* TranscriptView.swift */,
 				836B55AD2C619D2B002FF8A3 /* Assets.xcassets */,
 				836B55AF2C619D2B002FF8A3 /* Preview Content */,
 			);
@@ -138,6 +141,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				836B55AC2C619D27002FF8A3 /* ContentView.swift in Sources */,
+				836B55B82C61AE9E002FF8A3 /* TranscriptView.swift in Sources */,
 				836B55AA2C619D27002FF8A3 /* laravel_swift_python_youtube_transcript_appApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
